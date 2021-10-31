@@ -1,1 +1,100 @@
+#include <iostream>
+#include <string>
+#include <stdlib.h>
 
+// #include <iomanip>
+
+using namespace std;
+
+int main() {
+    cout << "Simple Calculator\n";
+
+
+    // orders
+
+
+
+    cout << "Press Enter to Continue...";
+    cin.get();
+
+    string Num1, Num2;
+    double num1, num2;
+    char sign;
+    bool r = false;
+
+    cout << "Please enter numbers with space and sign on each line:\n";
+
+    do {
+
+        cin >> Num1;
+
+        if (Num1 == "c" || Num1 == "C") {
+            #ifdef _WIN32
+                system("cls");
+            #elif
+                system("clear");
+            #endif
+
+            // system("cls");
+            continue;
+        }
+        else if (Num1 == "q" || Num1 == "Q") {
+            cout << "Really? I think, you should spend as much time using this stupid and useless calculator as I did while writing its code, right?\n";
+            exit(0);
+        }
+        else { // it can be without else
+            cin >> sign;
+            cin >> Num2;
+
+            num1 = stoi(Num1);
+            num2 = stoi(Num2);
+        }
+
+
+
+
+        // cin.clear
+
+        switch (sign) {
+        case '+':
+            cout << "=" << num1 + num2 << endl;
+            break;
+
+        case '-':
+            cout << "=" << num1 - num2 << endl;
+            break;
+
+        case '*':
+            cout << "=" << num1 * num2 << endl;
+            break;
+
+        case '/':
+            if (num2 == 0) {
+                cout << "Dividing by zero is an unforgivable mistake!\n"; // Mathematical Error
+            }
+            else {
+                cout << "=" << num1 / num2 << endl;
+            }
+            break;
+
+        default:
+            cout << "You can only use +, -, * or / signs!\n";
+            break;
+        }
+
+        cout << "Press Enter to continue...";
+        cin.get();
+
+        if (cin.get() == '\n') {
+            r = true;
+        }
+
+    } while (r == true);
+
+    return 0;
+}
+
+
+/*if (sign != '+' || sign != '-' || sign != '*' || sign != '/') {
+    cin.clear(); // array case char 1 if non char cin.clear
+}*/

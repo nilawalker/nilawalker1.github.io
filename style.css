@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+
+.container {
+  position: absolute;
+  top: 25%;
+}
+#title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+
+  font-size: 115%;
+  padding: 17px;
+}
+a {
+  text-decoration: none;
+  color: #00ff00;
+
+
+  font-size: 71%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+  font-family: 'Anonymous Pro', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  background: #222222;
+  color: #00ff00;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+button:hover {
+  background: #00ff00;
+  color: #222222;
+  box-shadow: 0 0 10px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00;
+}
+@keyframes spin {
+ 0% { transform: rotate(0deg); }
+ 100% { transform: rotate(360deg); }
+}
+#logo {
+  width: 9%;
+  animation: spin 0s linear infinite;
+}
+body {
+  font-family: 'Anonymous Pro', monospace;
+  background: #000000;
+  color: #f7ead3;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+em {
+  font-size: 75%;
+}
+em a {
+  font-size: 100%;
+}
+.inputs {
+  border-radius: 8px;
+  width: 74%;
+  padding: 12px;
+  background: #222222;
+  color: #f7ead3;
+  border: none;
+  margin: 4px;
+}
+::placeholder {
+  color: #555555;
+}
+#greeting {
+  font-size: 75%;
+}
+.footer a {
+  display: block;
+  padding: 2px;
+}
+#license {
+  font-size: 75%;
+  padding: 2px;
+}
+.footer {
+  position: absolute;
+  left: 50%;
+  top: 87.5%;
+}
+#footer {
+  position: relative;
+  left: -50%;
+  top: -87.5%;
+}

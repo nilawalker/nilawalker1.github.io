@@ -1,48 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
-
+body {
+  font-family: 'Anonymous Pro', monospace;
+  background: #000000;
+  color: #f7ead3;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
 
 .container {
   position: absolute;
   top: 25%;
+  left: 50%;
 }
+
+#container {
+  position: relative;
+  top: -25%;
+  left: -50%;
+  padding: 50px;
+  background: #111111;
+  border-radius: 25px;
+}
+
+img {
+  width: 15%;
+}
+
+a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+
+
+
+
+.header {
+  position: absolute;
+  left: 50%;
+  top: 2.5%;
+}
+#header {
+  position: relative;
+  left: -50%;
+  top: -2.5%;
+}
+
 #title {
   text-transform: uppercase;
   letter-spacing: 2px;
 
-
   font-size: 115%;
   padding: 17px;
 }
-a {
-  text-decoration: none;
-  color: #00ff00;
 
+input {
+  background: #222222;
+  color: #f7ead3;
+  border: none;
+  margin: 4px;
+  border-radius: 8px;
+  width: 74%;
+  padding: 12px;
 
-  font-size: 71%;
+}
+::placeholder {
+  color: #555555;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#greeting {
+  font-size: 75%;
+}
 
 button {
   font-family: 'Anonymous Pro', monospace;
@@ -59,50 +88,16 @@ button:hover {
   color: #222222;
   box-shadow: 0 0 10px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00;
 }
-@keyframes spin {
- 0% { transform: rotate(0deg); }
- 100% { transform: rotate(360deg); }
+
+button:hover {
+
 }
-#logo {
-  width: 9%;
-  animation: spin 0s linear infinite;
-}
-body {
-  font-family: 'Anonymous Pro', monospace;
-  background: #000000;
-  color: #f7ead3;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-em {
-  font-size: 75%;
-}
-em a {
-  font-size: 100%;
-}
-.inputs {
-  border-radius: 8px;
-  width: 74%;
-  padding: 12px;
-  background: #222222;
-  color: #f7ead3;
-  border: none;
-  margin: 4px;
-}
-::placeholder {
-  color: #555555;
-}
-#greeting {
-  font-size: 75%;
-}
+
 .footer a {
   display: block;
   padding: 2px;
-}
-#license {
-  font-size: 75%;
-  padding: 2px;
+
+  /* font-size: 71%; */
 }
 .footer {
   position: absolute;
@@ -114,3 +109,20 @@ em a {
   left: -50%;
   top: -87.5%;
 }
+#license {
+  font-size: 75%;
+  padding: 2px;
+}
+
+
+
+
+
+
+
+width: 90%;
+    max-width: 300px;
+    padding: 3rem;
+    margin: auto;
+    background: rgb(45 73 151);
+    border-radius: 0.5rem;
